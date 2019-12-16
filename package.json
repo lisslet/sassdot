@@ -1,0 +1,22 @@
+{
+  "name": "@lisslet/sassdot",
+  "version": "33.12.17",
+  "description": "SASS based CSS Framework",
+  "scripts": {
+    "document": "sassdoc ./src --verbose --theme rest"
+  },
+  "author": "protyliss@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "ncp": "^2.0.0",
+    "sassdoc": "^2.7.0",
+    "sassdoc-theme-rest": "^1.0.3",
+    "simple-git": "^1.126.0"
+  }
+}

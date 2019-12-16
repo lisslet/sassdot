@@ -1,0 +1,13 @@
+@use 'sass:map';
+@use 'sass:list';
+
+$ALPHABET-MAP: (a: A, b: B, c: C, d: D, e: E, f: F, g: G, h: H, i: I, j: J, k: K, l: L, m: M, n: N, o: O, p: P, q: Q, r: R, s: S, t: T, u: U, v: V, w: W, x: X, y: Y, z: Z) !default;
+$NUMBER-MAP: ('0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9) !default;
+$UNIT-MAP: ('px': 1px, 'cm': 1cm, 'mm': 1mm, '%': 1%, 'ch': 1ch, 'pc': 1pc, 'in': 1in, 'em': 1em, 'rem': 1rem, 'pt': 1pt, 'ex': 1ex, 'vw': 1vw, 'vh': 1vh, 'vmin': 1vmin, 'vmax': 1vmax) !default;
+
+$UNITS: map.keys($UNIT-MAP) !default;
+$NUMBERS: map.keys($NUMBER-MAP) !default;
+$UPPERCASES: map.values($ALPHABET-MAP) !default;
+$LOWERCASES: map.keys($ALPHABET-MAP) !default;
+$ALPHABETS: list.join($UPPERCASES, $LOWERCASES) !default;
+$CHARS: list.join($ALPHABETS, $NUMBERS) !default;

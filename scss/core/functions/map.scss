@@ -1,0 +1,6 @@
+/// is type of map
+/// @return {boolean}
+@function is-map($map) {
+  $type: type-of($map);
+  @return $type == map or ($type == list and length($map) == 0);
+}
